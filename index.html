@@ -4,72 +4,190 @@
 <head>
   <meta charset="utf-8">
   <title>Ting Wun Sam</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Itim|Merienda|Open+Sans|Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <table cellspacing="10px">
-    <tr>
-      <td><img src="images/me.jpg" alt="Me" width="300" height="350"></td>
-      <td>
-        <h1>Ting Wun Sam</h1>
-        <p><em>Novice Programmer</em></p>
-        <p>I am a junior Web Developer most proficient in the Java language. I like video games, Japanese culture and of course, <strong><u>pro</u></strong>gramming (and my girlfriend too ❤️). I work for <a href="https://www.maybank2u.com.my"
-            target="_blank" onclick="window.open('https://www.maybank2u.com.my','name')">maybank2u.com.my.</a></p>
-      </td>
-    </tr>
-  </table>
+  <!-- Header Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+      <img class="col-6 profile-pic" src="images/me.jpg" alt="Me">
+      <div class="col-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-4 col-sm-5"></div>
+      <p class="col-lg-2 col-md-4 col-sm-2 text-left h1">I'm Sam</p>
+      <div class="col-lg-5 col-md-4 col-sm-5"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-4"></div>
+      <p class="col-4 text-left"><em><i class="far fa-keyboard"></i> Novice Programmer</em></p>
+      <div class="col-lg-5 col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-4"></div>
+      <p class="col-4 text-left"><em><img src="images/malaysia-flag-heart.png" alt="MY"> Malaysian</em></p>
+      <div class="col-lg-5 col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-4"></div>
+      <p class="col-4 text-left"><em><i class="far fa-envelope"></i> tingwunsam@gmail.com</em></p>
+      <div class="col-lg-5 col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-2 text-right"></div>
+      <p class="col-8 text-justify">I am a junior Web Developer most proficient in the Java language. I like video games, Japanese culture and of course, <strong><u>pro</u></strong>gramming (and my girlfriend too ❤️). I work for <a
+          href="https://www.maybank2u.com.my" target="_blank" onclick="window.open('https://www.maybank2u.com.my','name')">maybank2u.com.my.</a></p>
+      <div class="col-2 text-right"></div>
+    </div>
+  </div>
   <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>
-      <p><strong>Bachelor of Computer Science (Hons)</strong> with specialization in Software Engineering (2012-2015)<br />
-
-        <small>&#8594; from <strong>Multimedia University Cyberjaya</strong> with 2nd Class Upper CGPA</small>
-
-      </p>
-    </li>
-  </ul>
-  <h3>Employment History</h3>
-  <table cellspacing="10px">
-    <tr>
-      <td valign="top"><strong>2017-2019</strong></td>
-      <td><strong>Maybank Shared Services</strong><br />
-        &#8594;Develop, test, enhance new features with JEE <br />
-        &#8594;Support, troubleshoot and resolve production issues <br />
-        &#8594;Act as the IT Project Manager to deliver project before deadlines <br />
-        &#8594;Support deployment/migration activities and troubleshoot server issues <br />
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><strong>2015-2017</strong></td>
-      <td><strong>Manulife Technology & Services</strong><br />
-        &#8594;Develop, test, debug SOAP webservices in JEE <br />
-        &#8594;Develop, test, configure and debug proposal/benefit illustration system in XSLT, HTML <br />
-        &#8594;Perform SIT and Resolve UAT issues <br />
-      </td>
-    </tr>
-  </table>
-  <h3>Skills</h3>
-  <table>
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td><strong>Programming Languages</strong> </td>
-            <td>C++, XSLT, Java EE, Android, HTML, CSS, Javascript, Oracle SQL, MySQL</td>
-          </tr>
-          <tr>
-            <td><strong>Platform/Frameworks</strong></td>
-            <td>Struts, MVC</td>
-          </tr>
-          <tr>
-            <td><strong>Others</strong></td>
-            <td>Unix (Solaris SunOS), Unix shell scripting</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+  <!-- employment -->
+  <div class="container text-center">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h3 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Employment History</h3>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3 text-right">
+                <strong>2017-2019</strong>
+              </div>
+              <div class="col-1 text-right"></div>
+              <div class="col-8 text-justify">
+                <strong>IT Executive in Maybank Shared Services</strong><br />
+                <ul>
+                  <li>Develop new features and enhance existing features with JEE</li>
+                  <li>Manage deliverables, timeline and resources as the IT Project Manager</li>
+                  <li>Support, troubleshoot and resolve production issues</li>
+                  <li>Support deployment/migration activities and troubleshoot server issues</li>
+                  <li>Support & monitor application servers</li>
+                  <li>Maintain RESTful web services on WebLogic Server</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 text-right">
+                <strong>2015-2017</strong>
+              </div>
+              <div class="col-1 text-right"></div>
+              <div class="col-8 text-justify">
+                <strong>Softare Engineer in Manulife Technology & Services</strong><br />
+                <ul>
+                  <li>Develop, test, debug SOAP webservices in JEE</li>
+                  <li>Develop, test, configure and debug proposal/benefit illustration system in XSLT, HTML</li>
+                  <li>Perform SIT and Resolve UAT issues</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- education -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h3 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Education</h3>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <p class="text-center"><strong>Bachelor of Computer Science (Hons)</strong> with specialization in Software Engineering (2012-2015)
+              <footer class="blockquote-footer" style="color: #3c70a4;">from <strong>Multimedia University Cyberjaya</strong> with 2nd Class Upper CGPA</footer>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- skills -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h3 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Skills</h3>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-2 text-right">
+              </div>
+              <div class="col-2 text-justify">
+                <strong>Technical Skills</strong>
+              </div>
+              <div class="col-3 text-justify">
+                <ul>
+                  <li>Java EE</li>
+                  <li>Javascript</li>
+                  <li>Oracle SQL</li>
+                  <li>C++</li>
+                  <li>XSLT</li>
+                  <li>Android</li>
+                </ul>
+              </div>
+              <div class="col-5 text-justify">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 text-right">
+              </div>
+              <div class="col-2 text-justify">
+                <strong>Frameworks</strong>
+              </div>
+              <div class="col-3 text-justify">
+                <ul>
+                  <li>Struts MVC</li>
+                  <li>React</li>
+                  <li>Spring</li>
+                  <li>Hibernate</li>
+                </ul>
+              </div>
+              <div class="col-5 text-justify">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 text-right">
+              </div>
+              <div class="col-2 text-justify">
+                <strong>Others</strong>
+              </div>
+              <div class="col-3 text-justify">
+                <ul>
+                  <li>Unix (Solaris SunOS)</li>
+                  <li>Unix Shell Scripting</li>
+                </ul>
+              </div>
+              <div class="col-5 text-justify">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/91267bc992.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
